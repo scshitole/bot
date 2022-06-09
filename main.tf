@@ -25,3 +25,10 @@ resource "bigip_as3" "nginx" {
   #  tenant_name = "consul_sd"
   #  depends_on  = [null_resource.install_as3]
 }
+
+resource "bigip_as3" "nginx2" {
+  as3_json = file(var.declaration2)
+  #  tenant_name = "consul_sd2"
+  #  depends_on  = [null_resource.install_as3]
+}
+
