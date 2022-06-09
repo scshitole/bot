@@ -1,4 +1,11 @@
 terraform {
+    
+    cloud {
+ organization = "f5networks-bd"
+workspaces {
+      name = "bot"
+    }
+    }
 required_providers {
     aws = {
       source  = "hashicorp/aws"
